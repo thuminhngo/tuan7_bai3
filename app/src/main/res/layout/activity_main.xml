@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="12dp">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit_form"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingBottom="6dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingStart="2dp"
+                tools:ignore="RtlSymmetry"/>
+
+        <EditText
+                android:id="@+id/isName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_full_name"
+                android:textSize="14sp"
+                android:autofillHints="@string/hint_full_name"
+                android:inputType="text"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ID"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingStart="2dp"
+                tools:ignore="RtlSymmetry"/>
+
+        <EditText
+                android:id="@+id/isID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/type_ID"
+                android:textSize="14sp"
+                android:autofillHints="@string/hint_full_name"
+                android:inputType="number"/>
+
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender"
+                    android:paddingStart="2dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    tools:ignore="RtlSymmetry"/>
+
+            <RadioButton
+                    android:id="@+id/isMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="2dp"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:text="@string/male" tools:ignore="RtlSymmetry"/>
+
+            <RadioButton
+                    android:id="@+id/isFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="2dp"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:text="@string/female" tools:ignore="RtlSymmetry"/>
+        </RadioGroup>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingStart="2dp"
+                tools:ignore="RtlSymmetry"/>
+
+        <EditText
+                android:id="@+id/isEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/type_email"
+                android:textSize="14sp"
+                android:autofillHints="@string/hint_full_name"
+                android:inputType="textEmailAddress"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingStart="2dp"
+                tools:ignore="RtlSymmetry"/>
+
+        <EditText
+                android:id="@+id/phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/type_phone_number"
+                android:textSize="14sp"
+                android:autofillHints="@string/hint_full_name"
+                android:inputType="phone"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_of_birth"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingStart="2dp"
+                tools:ignore="RtlSymmetry"/>
+
+        <EditText
+                android:id="@+id/dateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/isDateOfBirth"
+                android:textSize="14sp"
+                android:autofillHints="DD/MM/YYYY"
+                android:focusable="true"
+                android:clickable="true"
+                android:inputType="date"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingStart="2dp"
+                tools:ignore="RtlSymmetry"
+                android:paddingBottom="8dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:paddingStart="2dp"
+                android:paddingBottom="4dp"
+                tools:ignore="RtlSymmetry"/>
+
+        <Spinner
+                android:id="@+id/citySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/district"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:paddingStart="2dp"
+                android:paddingBottom="4dp"
+                tools:ignore="RtlSymmetry"/>
+
+        <Spinner
+                android:id="@+id/districtSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/commune"
+                android:textColor="@color/black"
+                android:paddingStart="2dp"
+                android:paddingBottom="4dp"
+                tools:ignore="RtlSymmetry"/>
+
+        <Spinner
+                android:id="@+id/communeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hobby"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:paddingStart="2dp"
+                tools:ignore="RtlSymmetry"
+                android:paddingBottom="8dp"/>
+        <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sport"/>
+        <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cinema"/>
+        <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/music"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_and_condition"
+                android:textColor="@color/black"
+                android:paddingStart="2dp"
+                tools:ignore="RtlSymmetry"
+                android:paddingBottom="4dp"/>
+
+        <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/agree_terms_and_condition"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:text="@string/submit"
+                android:background="@color/design_default_color_on_primary"
+                android:backgroundTint="@android:color/holo_blue_light"/>
+
+    </LinearLayout>
+</ScrollView>
+
